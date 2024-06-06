@@ -2,6 +2,11 @@ pipeline {
     agent { label 'raghu' }
     stages {
         stage('test') {
+            agent { 
+                docker {
+                    image 'alpine:latest'
+                }
+            }
             steps {
                 sh '''
                 id 
