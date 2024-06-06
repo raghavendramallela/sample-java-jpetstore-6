@@ -4,7 +4,7 @@ pipeline {
         stage('test') {
             agent { 
                 docker {
-                    image 'alpine:latest'
+                    image 'docker.io/library/alpine:latest'
                 }
             }
             steps {
