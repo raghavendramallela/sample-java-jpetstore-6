@@ -8,6 +8,7 @@ pipeline {
                 ls -althr
                 hostname
                 cat /etc/os-release
+                '''
             }
         }
     }
